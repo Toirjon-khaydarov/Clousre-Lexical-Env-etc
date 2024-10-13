@@ -1,0 +1,25 @@
+.findtrend {
+  &__title {
+    font-size: 36px;
+    padding: 80px 0;
+    text-align: left;
+    font-weight: 900;
+    margin: auto;
+
+    &__mut {
+      color: #adadad;
+    }
+  }
+}
+
+@include desktop {
+  .findtrend {
+    &__title {
+      font-size: 72px;
+      padding: 140px 0;
+      text-align: left;
+      width: 80%;
+      margin: auto;
+    }
+  }
+}

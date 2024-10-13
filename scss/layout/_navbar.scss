@@ -1,0 +1,110 @@
+.nav {
+  padding: 24px 0;
+  background: #000;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  &__logo {
+    &__desktop {
+      display: none;
+      color: #ffffff;
+    }
+  }
+
+  &__list {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    padding-left: 80px;
+
+    &__item span {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+  &__button {
+    display: none;
+    gap: 16px;
+  }
+
+  &__burger {
+    cursor: pointer;
+  }
+
+  &__mobile {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: all 0.2s ease-in-out;
+
+    &--aktive {
+      right: 0%;
+    }
+
+    &--logo {
+      padding-left: 30px;
+    }
+
+    &--icon {
+      cursor: pointer;
+    }
+  }
+
+  &__wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
+  }
+
+  &__list-mobile {
+    text-decoration: underline;
+
+    &--item {
+      padding-top: 40px;
+      span {
+        color: #ffffff;
+      }
+    }
+  }
+
+  @include desktop {
+    .nav {
+      &__button {
+        display: flex;
+      }
+
+      &__list {
+        display: flex;
+      }
+      &__burger {
+        display: none;
+      }
+    }
+
+    &__logo {
+      &__desktop {
+        display: flex;
+      }
+      &__mobile {
+        display: none;
+      }
+    }
+  }
+}

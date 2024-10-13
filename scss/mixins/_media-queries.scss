@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  padding: 0 18px;
+  min-width: 375px;
+  max-width: 571px;
+  margin: auto;
+}
+
+@mixin desktop {
+  @media (min-width: 1316px) {
+    @content;
+    .container {
+      min-width: 1280px;
+    }
+  }
+}
+
+@include desktop {
+.nav {
+  &__button {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+  }
+  &__burger {
+    display: none;
+  }
+
+
+  &__logo {
+    &__desktop {
+      display: flex;
+    }
+    &__mobile {
+      display: none;
+    }
+  }
+}
+}

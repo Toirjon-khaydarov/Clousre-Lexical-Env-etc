@@ -1,0 +1,41 @@
+.social {
+  background: #fafafa;
+
+  &__title {
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+  }
+}
+
+@include desktop {
+  .social {
+    &__title {
+      padding-top: 140px;
+      padding-bottom: 80px;
+      font-weight: 700;
+      font-size: 64px;
+    }
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 24px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    img {
+      margin: auto;
+    }
+  }
+}

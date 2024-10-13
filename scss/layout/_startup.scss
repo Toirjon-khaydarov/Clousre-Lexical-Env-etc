@@ -1,0 +1,35 @@
+.startup {
+  &__title {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 32px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 140px;
+  }
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+@include desktop {
+  .startup {
+    &__title {
+      font-size: 72px;
+      padding-bottom: 80px;
+    }
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+  }
+}

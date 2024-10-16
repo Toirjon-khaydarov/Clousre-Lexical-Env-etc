@@ -1,7 +1,7 @@
 .container {
-  width: 100%;
+  width: 96%;
   padding: 0 18px;
-  min-width: 375px;
+  min-width: 320px;
   max-width: 571px;
   margin: auto;
 }
@@ -10,7 +10,7 @@
   @media (min-width: 1316px) {
     @content;
     .container {
-      min-width: 1280px;
+    width: 96%;
     }
   }
 }

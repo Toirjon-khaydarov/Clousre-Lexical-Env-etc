@@ -1,0 +1,38 @@
+.info {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+  }
+  &__btn {
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 85px;
+    width: 180px;
+  }
+  &__btn:hover {
+    background: #000000;
+    color: aqua;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@include desktop {
+  .info {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      margin-top: 160px;
+    }
+    &__btn {
+      margin-top: 85px;
+      margin-bottom: 85px;
+      height: 50px;
+    }
+  }
+}

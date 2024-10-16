@@ -1,0 +1,41 @@
+.join {
+  background: #a8ff35;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-size: 72px;
+    text-align: center;
+  }
+  &__title {
+    padding-top: 140px;
+    padding-bottom: 12px;
+    font-weight: 900;
+  }
+  &__text {
+    color: #afd879f0;
+    font-weight: 900;
+  }
+  &__btn {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 60px;
+    margin-top: 60px;
+    margin-bottom: 140px;
+  }
+  &__underline {
+    width: 52%;
+    border: 0;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: auto;
+
+    &:hover {
+      background-color: rgb(0, 170, 255);
+      border: 3px;
+    }
+  }
+}
